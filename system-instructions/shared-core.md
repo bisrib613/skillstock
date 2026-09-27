@@ -54,6 +54,7 @@ When a user-provided template is available, treat it as the authoritative struct
 - Do not summarize, shorten, rewrite, or replace the fixed rule blocks.
 - Do not add arbitrary fields that were not part of the template.
 - Do not output the generated asset instead of the prompt.
+- Use only active prompt templates. Anything under `future/layer-2/` is out of scope and must not be selected in Layer 1.
 
 ## Commercial reasoning
 
