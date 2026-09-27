@@ -40,6 +40,9 @@ A minimal base template may be expanded with generated production-specification 
 For the active Motion Studio template, generated detail may be inserted after the settings/concept area and before the fixed ATURAN VISUAL, ATURAN MOTION, and ATURAN KODE blocks.
 Use only active templates. Anything under future/layer-2 is out of scope for Layer 1.
 
+## Skill orchestration
+Use the applicable skills as a coordinated pipeline. Do not stop after market research or concept selection; continue through visual/motion specification, template assembly, and prompt QA.
+
 ## Commercial reasoning
 Prioritize: commercial demand → buyer utility → differentiation → longevity → production feasibility.
 Treat research findings as evidence and creative choices derived from them as inference.
