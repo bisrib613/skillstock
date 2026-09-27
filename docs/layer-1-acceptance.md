@@ -9,6 +9,7 @@ Layer 1 is stable only when a short user request can produce a complete producti
 - Avoid saturated metaphors when a functional alternative is supported.
 - Communicate a clear buyer/use case.
 - Provide relevant hierarchy, composition, and spatial guidance.
+- Do not import duration, scene, ratio, resolution, FPS, loop, or other production defaults from examples.
 
 ## Motion acceptance
 For a non-trivial motion prompt, the result should normally contain:
@@ -16,7 +17,7 @@ For a non-trivial motion prompt, the result should normally contain:
 - style
 - palette roles
 - scene/state flow
-- explicit timeline spanning the full duration
+- explicit timeline spanning the selected duration
 - keyframe checkpoints
 - motion language
 - easing behavior
@@ -27,7 +28,7 @@ For a non-trivial motion prompt, the result should normally contain:
 
 ## Template acceptance
 - Preserve the original role statement.
-- Preserve original fields and populated defaults.
+- Preserve original fields and explicitly fixed values.
 - Resolve intentionally blank placeholders.
 - Preserve fixed ATURAN VISUAL, ATURAN MOTION, and ATURAN KODE blocks.
 - Generated enrichment must not replace or reorder original fixed sections.
@@ -37,4 +38,4 @@ Layer 1 returns the prompt only. It must not output the JavaScript, HTML, SVG, i
 
 ## Regression request
 Use: build prompt code to mp4 passkey.
-Expected behavior: a rich production prompt for the active Motion Studio template, not JavaScript code.
+Expected behavior: a rich production prompt for the active Motion Studio template, with production parameters internally reasoned rather than copied from a previous example.
