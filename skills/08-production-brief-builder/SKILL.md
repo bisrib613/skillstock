@@ -20,6 +20,16 @@ Never shorten or silently rewrite fixed instruction blocks.
 - An explicitly populated source value = preserve unless the user overrides it.
 - An explicit user override = use the override.
 
+## Detail mode
+
+The builder receives one of two modes:
+
+### Sederhana
+Populate the source template and preserve its fixed content. Do not insert the extended production-specification sections.
+
+### Full Detail
+Populate the source template and insert the relevant production-specification sections needed for an implementation-ready prompt. Follow the Premium Production Prompt Specification and Motion Scene Engineering skills when applicable.
+
 ## Premium prompt expansion
 A minimal base template can still produce a highly detailed professional prompt through generated production-specification sections.
 
