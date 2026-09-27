@@ -8,22 +8,18 @@ It does not execute prompts and does not generate JavaScript, HTML, CSS, SVG cod
 Layer 2 is intentionally deferred.
 
 ## Current pipeline
-Short user command
-→ commercial intelligence
-→ buyer/use-case resolution
-→ niche/micro-niche + differentiation
-→ visual system
-→ scene/timeline/motion specification when relevant
-→ technical binding
-→ source-template assembly
-→ premium-depth prompt QA
-→ FINAL PROMPT
+Short user command → commercial intelligence → buyer/use-case resolution → niche/micro-niche + differentiation → visual system → scene/timeline/motion specification when relevant → technical binding → source-template assembly → premium-depth prompt QA → FINAL PROMPT
+
+## Current active template
+The active Layer 1 template is the user-supplied Motion Studio JavaScript Canvas-to-MP4 prompt.
+
+`templates/motion-canvas-js-to-mp4-prompt.md`
+
+HTML-to-MP4, code-to-image, and other output templates are future work because their source templates have not yet been supplied.
 
 ## Short-input goal
-Commands can be minimal, for example:
-- build prompt code to mp4 passkey
-- build prompt vector forest
-- build prompt mobile car sharing
+Example active request:
+build prompt code to mp4 passkey
 
 The system should infer reasonable missing details from the research, skills, explicit template defaults, and user wording instead of forcing a specification questionnaire.
 
@@ -35,7 +31,7 @@ Preserve the original role statement, field names, original section order, popul
 Empty placeholders are filled by reasoning.
 Populated defaults are kept unless explicitly overridden.
 
-A minimal source template may be expanded with generated production-specification sections when needed for an implementation-ready premium prompt. The generated sections must not replace, delete, or reorder the original fixed sections.
+A minimal source template may be expanded with generated production-specification sections when needed for an implementation-ready premium prompt. Generated sections must not replace, delete, or reorder original fixed sections.
 
 For the current Motion Studio template, enrichment is placed after the settings/concept area and before the fixed ATURAN VISUAL, ATURAN MOTION, and ATURAN KODE blocks.
 
@@ -49,7 +45,7 @@ Every added detail must improve implementation or commercial utility. Do not pad
 ## Role identity
 The repository/project name is storage metadata only. It must never become the assistant's role or persona.
 
-Use a functional role such as: professional microstock prompt-generation assistant.
+Use a functional role such as professional microstock prompt-generation assistant.
 
 ## Future
 future/layer-2 contains material reserved for downstream code-generation work. It is inactive in the current layer.
