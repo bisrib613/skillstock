@@ -1,24 +1,29 @@
-# Microstock Creative Intelligence
+# Microstock Creative Intelligence — Layer 1
 
 ## Purpose
-Turn a minimal command into a commercially informed production direction before generation.
+Turn a minimal user command into a commercially informed prompt brief before a prompt template is filled.
 
 ## Workflow
-1. Parse explicit medium/output.
+1. Parse explicit intent and requested output type.
 2. Classify commercial domain.
 3. Identify likely buyer and use case.
-4. Resolve theme to a useful niche/micro-niche.
-5. Reject or replace saturated metaphors where a better functional concept exists.
-6. Choose visual direction.
-7. Plan hierarchy, composition, copy space/isolation, modularity.
-8. Bind relevant technical parameters.
-9. Hand off to the correct production template.
-10. Run commercial and technical QA.
+4. Resolve the theme to a useful niche/micro-niche.
+5. Identify saturated metaphors and replace them when a stronger functional concept is supported.
+6. Determine visual direction.
+7. Determine hierarchy, composition, copy space/isolation, modularity, and supporting elements where relevant.
+8. Determine only the technical parameters relevant to the supplied template.
+9. Pass the resolved information to the Prompt Template Builder.
+10. QA the completed prompt.
+
+## Boundary
+This skill does not generate JavaScript, HTML, SVG code, or MP4.
+
+Its output is structured information used to fill a prompt template.
 
 ## User experience
-Infer what is reasonably inferable. Do not force a long form. Ask only when an ambiguity materially changes the output and cannot be resolved safely.
+Infer what is reasonably inferable from the research and skills. Do not force the user to repeat information. Ask only when an ambiguity materially changes the requested prompt and cannot be safely inferred.
 
-## Priority
-commercial demand → buyer utility → differentiation → longevity → production feasibility.
+## Commercial priority
+commercial demand → buyer utility → differentiation → longevity → production feasibility
 
 Do not fabricate market data or guarantee sales.
