@@ -1,55 +1,55 @@
 # SkillStock
 
-Repository for a reusable **Layer 1 microstock prompt-generation system**.
+Reusable Layer 1 prompt-generation system for premium commercial microstock vector, motion graphics, and future programmatic visual workflows.
 
 ## Current scope
+The repository currently builds PROMPTS ONLY.
+It does not execute prompts and does not generate JavaScript, HTML, CSS, SVG code, MP4, or final assets.
+Layer 2 is intentionally deferred.
 
-The current build stops at **FINAL PROMPT**.
-
-It does not generate JavaScript, HTML, CSS, SVG code, MP4, or downstream production files yet. Layer 2 is intentionally deferred.
-
-## Current flow
-
+## Current pipeline
 Short user command
-→ commercial/creative reasoning
-→ choose applicable prompt template
-→ fill only intentionally open fields
-→ preserve fixed template content and defaults
-→ prompt QA
-→ final ready-to-use production prompt
+→ commercial intelligence
+→ buyer/use-case resolution
+→ niche/micro-niche + differentiation
+→ visual system
+→ scene/timeline/motion specification when relevant
+→ technical binding
+→ source-template assembly
+→ premium-depth prompt QA
+→ FINAL PROMPT
 
-## User experience
+## Short-input goal
+Commands can be minimal, for example:
+- build prompt code to mp4 passkey
+- build prompt vector forest
+- build prompt mobile car sharing
 
-The user should be able to use short commands such as:
-
-- `build prompt code to mp4`
-- `build prompt motion passkey`
-- `build prompt mobile car sharing`
-
-The system should infer commercially useful context from the supplied research and skills instead of making the user complete a long form.
+The system should infer reasonable missing details from the research, skills, explicit template defaults, and user wording instead of forcing a specification questionnaire.
 
 ## Template fidelity
+The user's supplied prompt template is the authoritative base contract.
 
-A user-supplied template is the authoritative base prompt.
+Preserve the original role statement, field names, original section order, populated defaults, fixed visual/motion/code rules, and output contract.
 
-- Preserve its role statement and purpose.
-- Preserve section order and field names.
-- Preserve populated defaults unless the user explicitly overrides them.
-- Fill intentionally blank placeholders from research/skills.
-- Preserve all fixed visual, motion, and code rules.
-- Do not shorten, summarize, or redesign the template.
-- Do not add unrelated fields.
-- Do not generate the downstream code in Layer 1.
+Empty placeholders are filled by reasoning.
+Populated defaults are kept unless explicitly overridden.
 
-## Architecture
+A minimal source template may be expanded with generated production-specification sections when needed for an implementation-ready premium prompt. The generated sections must not replace, delete, or reorder the original fixed sections.
 
-- `research/` — research-derived operational knowledge
-- `skills/` — reasoning and prompt-building skills
-- `templates/` — prompt templates
-- `system-instructions/` — platform-specific Layer 1 instructions
+For the current Motion Studio template, enrichment is placed after the settings/concept area and before the fixed ATURAN VISUAL, ATURAN MOTION, and ATURAN KODE blocks.
 
-## Commercial principle
+## Premium-depth standard
+A premium production prompt is not just theme + style + generic motion words.
 
-commercial demand → buyer utility → differentiation → longevity → production feasibility
+For non-trivial motion work it should normally contain enough detail for communication goal, visual concept/states, palette roles, scene flow, exact timeline, keyframe checkpoints, motion language, easing, composition/framing, art direction, loop strategy, and technical contract.
 
-Do not invent unsupported sales data, marketplace guarantees, search-ranking weights, or moderation thresholds.
+Every added detail must improve implementation or commercial utility. Do not pad the prompt.
+
+## Role identity
+The repository/project name is storage metadata only. It must never become the assistant's role or persona.
+
+Use a functional role such as: professional microstock prompt-generation assistant.
+
+## Future
+future/layer-2 contains material reserved for downstream code-generation work. It is inactive in the current layer.
