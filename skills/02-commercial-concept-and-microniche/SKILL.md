@@ -1,11 +1,26 @@
 # Commercial Concept & Micro-Niche
 
-Move from broad theme to differentiated production concept.
+## Purpose
+Transform a broad theme into one specific visual concept with clear commercial utility and enough depth for production.
 
-Broad theme → category → niche → micro-niche → buyer problem/use case → visual opportunity → variation system.
+## Concept chain
+Broad theme → category → niche → micro-niche → buyer problem → communication goal → visual system → variation potential
 
-Prefer concepts that explain, visualize, compare, track, connect, monitor, verify, or transform something.
+## Concept selection
+Prefer concepts that naturally visualize a process, workflow, system, comparison, status change, data, monitoring, verification, transformation, or infrastructure.
 
-Check variation depth through process states, comparisons, workflows, architecture, dashboards/data, environments, and success/failure states.
+## Differentiation
+Do not differentiate a saturated concept only by changing color, adding particles, or changing camera angle.
 
-Differentiation should come from functional specificity, not random ornament.
+Differentiate through functional specificity, information structure, state relationships, meaningful context, useful composition, and restrained visual language.
+
+## Variation depth
+Check whether the concept can support meaningful variants such as process states, success/failure, before/after, comparison, system modules, environment variations, data states, or object variants.
+
+Use variation depth to support portfolio scalability without encouraging near-duplicate spam.
+
+## Anti-generic rule
+If a familiar metaphor is saturated according to the research, replace the metaphor with a visual representation of the actual function whenever practical.
+
+## Output
+Provide one primary micro-niche concept rather than many unrelated ideas.
