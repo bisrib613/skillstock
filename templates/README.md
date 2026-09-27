@@ -1,13 +1,19 @@
-# Active Prompt Templates — Layer 1
+# Templates
 
-Only prompt templates directly under this folder are active for Layer 1.
+## Active Layer 1
 
-## Active
+`motion-canvas-js-to-mp4-prompt.md` is the canonical user-supplied Motion Studio prompt template.
 
-- `motion-canvas-js-to-mp4-prompt.md` — canonical user-supplied Motion Studio prompt template.
+Layer 1 fills and enriches this prompt but does not execute it.
+
+## Template handling
+
+The source template's role, fields, defaults, and fixed instruction blocks are preserved.
+
+Generated production-specification detail may be inserted between the settings/concept area and the fixed ATURAN blocks when needed for a professional result.
 
 ## Future Layer 2
 
-Templates under `future/layer-2/` are archived for the later code-generation layer.
+Files under `future/layer-2/` are archived for later downstream code-generation work.
 
-Do not select or execute them while building prompts.
+They are not active in the current prompt-building layer.
