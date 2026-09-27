@@ -110,3 +110,6 @@ Before returning:
 - confirm internal consistency
 - confirm premium specification depth
 - confirm the result is still a prompt, not generated code.
+
+## Field discipline
+Keep settings fields concise and semantically clean. Do not stuff long narrative into TEMA VIDEO or other single-value fields merely to increase detail. Put implementation detail into the generated production-specification sections.
