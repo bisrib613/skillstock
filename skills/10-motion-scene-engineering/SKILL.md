@@ -1,11 +1,15 @@
 # Motion Scene Engineering — Layer 1
 
 ## Purpose
+Build a precise scene, state, and timeline architecture for professional motion prompts.
 
-Build a precise scene and timeline specification for motion prompts.
+## No preset duration or scene count
+Do not assume a fixed runtime or scene count.
+Determine duration and number of scenes from explicit user constraints first, then from commercial use, concept complexity, readability, and loop requirements.
+
+Five seconds with one scene is valid when the concept communicates better that way. Longer or multi-scene structures are valid when the concept requires them.
 
 ## Scene model
-
 For each scene/state define:
 - time range
 - purpose
@@ -17,60 +21,44 @@ For each scene/state define:
 - ending state
 
 ## Timeline construction
-
-Given a declared duration D:
+Given the selected duration:
 - start at 0.00s
-- allocate all meaningful time through D
-- include entrance, action, transition, hold, and loop preparation where appropriate
-- avoid arbitrary scene splitting
-- avoid timeline gaps
+- end exactly at the selected duration
+- do not overlap ranges
+- do not leave unexplained gaps
+- include transitions and holds
+- use the full runtime intentionally
 
 ## State-based thinking
-
-Prefer state changes over vague descriptions.
+Prefer meaningful state changes over vague descriptions.
 
 Example pattern:
-Initial → interaction → processing → success → hold → loop return.
+initial → interaction → processing → success → hold → loop return
 
-The actual states must be adapted to the requested theme.
+Adapt the pattern to the requested concept.
 
-## Motion relationships
+## Motion hierarchy
+Primary motion communicates the idea.
+Secondary motion supports the primary event.
+Micro motion adds polish.
+Transition motion changes state.
 
-Distinguish:
-- primary motion: the event that communicates the idea
-- secondary motion: supporting movement
-- micro motion: subtle life/polish
-- transition motion: movement that changes one state to another
-
-Primary motion should dominate.
+Do not let micro motion compete with primary motion.
 
 ## Timing hierarchy
-
-Fast timing communicates interaction or emphasis.
-Medium timing communicates transition.
-Longer holds communicate comprehension.
+Use faster timing for emphasis or interaction, medium timing for transformation, and longer holds where comprehension benefits.
 
 Do not make every action equally fast.
 
 ## Keyframe summary
-
-Use a compact checkpoint table when the animation is sufficiently complex.
-
-Format:
+When the animation has meaningful complexity, include:
 Time | State | Primary Motion | Supporting Motion
 
 ## Loop engineering
+When a loop is requested, precisely describe the initial state, final state, return path, and deterministic relationship between the endpoints.
 
-For a loop:
-- define the initial state precisely
-- define the final state precisely
-- ensure the transition path between them is intentional
-- avoid relying on an unexplained fade unless that fade is the design
+Do not rely on unexplained fades as the only loop strategy unless that is intentionally part of the concept.
 
-For procedural rendering, loop endpoints must be deterministic.
-
-## Motion anti-slop
-
-Reject motion added merely because the timeline feels empty.
-
-Every movement must support comprehension, hierarchy, polish, or loop continuity.
+## Anti-slop
+Reject movement added only because the timeline feels empty.
+Every motion should serve comprehension, hierarchy, polish, interaction, or loop continuity.
