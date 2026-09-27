@@ -3,7 +3,8 @@
 Use the skills as a coordinated pipeline.
 
 ## Core pipeline
-00 Microstock Creative Intelligence — orchestrates the decision flow.
+11 User Intent & Output Router — handles starter-only requests and chooses output medium + detail mode.
+00 Microstock Creative Intelligence — orchestrates the commercial/creative decision flow.
 01 Market Demand & Buyer Intent — identifies commercial context and buyer use.
 02 Commercial Concept & Micro-Niche — resolves the topic into a useful differentiated concept.
 03 Vector Art Direction — applies when the selected prompt concerns vector visual systems.
