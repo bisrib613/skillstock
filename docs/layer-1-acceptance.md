@@ -2,6 +2,13 @@
 
 Layer 1 is stable only when a short user request can produce a complete production prompt without executing the embedded downstream instructions.
 
+## User-flow acceptance
+- A starter-only creative seed does not trigger immediate prompt generation.
+- The assistant asks for output medium: Code JS → MP4, HTML → MP4, or Code → Image.
+- The assistant asks for detail level: Sederhana or Full Detail.
+- No output/detail default is silently selected.
+- If the user already supplied a route or detail mode, only the missing choice is requested.
+
 ## Core acceptance
 - Identify output type and use the correct active template.
 - Use supplied research without inventing demand evidence.
@@ -10,6 +17,7 @@ Layer 1 is stable only when a short user request can produce a complete producti
 - Communicate a clear buyer/use case.
 - Provide relevant hierarchy, composition, and spatial guidance.
 - Do not import duration, scene, ratio, resolution, FPS, loop, or other production defaults from examples.
+- When the active motion template leaves duration open, choose only 5, 10, or 15 seconds through internal reasoning.
 
 ## Motion acceptance
 For a non-trivial motion prompt, the result should normally contain:
