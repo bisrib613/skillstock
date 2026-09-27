@@ -1,8 +1,27 @@
-# Production Brief Builder
+# Prompt Template Builder — Layer 1
 
-Create the minimum internal brief needed by the selected production template.
+## Purpose
+Take the resolved commercial/creative brief and fill the selected user-supplied prompt template while preserving the template's original structure.
 
-Relevant fields can include:
-asset type, theme, commercial category, micro-niche, buyer/use case, concept, style, composition, hierarchy, supporting elements, copy space/isolation, palette, duration, scene count, aspect ratio, resolution, FPS, loop, technical restrictions, IP restrictions, output mode.
+## Template fidelity
+- Treat the source template as authoritative.
+- Preserve the role statement.
+- Preserve every field name and field order.
+- Preserve populated defaults unless explicitly overridden by the user.
+- Fill intentionally blank placeholders.
+- Preserve all fixed visual, motion, and code instruction blocks.
+- Do not summarize or shorten.
+- Do not redesign the template.
+- Do not add unrelated instructions.
+- Do not generate the downstream code.
 
-Infer missing values when supported. Do not force irrelevant fields. Ask only when a missing value materially changes the requested result.
+## Placeholder rule
+An empty placeholder means the system must infer and insert the appropriate value using the research and creative-intelligence skills.
+
+A populated placeholder/default is already intentional. Keep it unchanged unless the user explicitly changes it.
+
+## Prompt output
+The result must be a complete ready-to-use prompt for the downstream generator.
+
+## QA
+Before returning the prompt, verify that no required placeholder remains unresolved, fixed defaults were preserved, the original instructions remain intact, and the result is internally consistent with the requested topic.
