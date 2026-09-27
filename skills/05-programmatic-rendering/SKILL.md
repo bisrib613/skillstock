@@ -1,24 +1,25 @@
-# Programmatic Rendering
+# Programmatic Rendering — Prompt Layer
 
-For Canvas, SVG, and HTML/browser-rendered motion.
+## Purpose
+Translate rendering constraints into explicit prompt instructions for downstream code generation.
 
 ## Determinism
-Never rely on uncontrolled randomness for persistent frame-to-frame elements. Use seeded pseudo-random values tied to stable IDs and/or frame/time.
+For frame-by-frame rendering, require deterministic procedural behavior.
+Avoid uncontrolled randomness that changes persistent positions or states between frames.
+Use seeded pseudo-random values when procedural variation is needed.
 
 ## Resolution independence
-Use normalized/logical coordinates or scalable viewBox systems.
+Use normalized/logical coordinates, responsive layout calculations, or scalable viewBox systems as appropriate.
 
 ## Frame safety
-Ensure:
-- first frame is valid
-- font loading is synchronized before capture when fonts are used
-- no layout shift
-- no uncontrolled asynchronous asset arrival
-- deterministic timing
-- bounded Canvas/DOM work
-- no per-frame DOM explosion
+Prompt requirements should cover valid first frame, deterministic timing, no layout shift, font readiness before capture when fonts are used, bounded Canvas/DOM work, no uncontrolled asynchronous dependencies, and no per-frame DOM explosion.
 
-## Loops
-Make initial and final visual states connect exactly when a seamless loop is requested.
+## Loop safety
+When looping, define the initial state, final state, return path, and deterministic loop endpoints.
 
-Preview behavior and final frame-by-frame encoding are not assumed to be identical.
+## Renderer awareness
+Do not assume interactive browser preview and frame-by-frame encoded output behave identically.
+Prompt the downstream generator to optimize for deterministic rendering rather than only interactive appearance.
+
+## Output
+Return technical requirements relevant to the selected output template. Do not inject unrelated renderer technologies.
