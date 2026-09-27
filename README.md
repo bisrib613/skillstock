@@ -1,27 +1,55 @@
 # SkillStock
 
-Reusable skills, production templates, and platform system instructions for premium commercial microstock vector, motion graphics, and programmatic visual production.
+Repository for a reusable **Layer 1 microstock prompt-generation system**.
 
-## Core flow
-Short user input → commercial intent → buyer/use case → micro-niche → differentiation → art direction → production → QA.
+## Current scope
 
-Examples:
-- `build vector forest`
-- `build motion passkey`
+The current build stops at **FINAL PROMPT**.
+
+It does not generate JavaScript, HTML, CSS, SVG code, MP4, or downstream production files yet. Layer 2 is intentionally deferred.
+
+## Current flow
+
+Short user command
+→ commercial/creative reasoning
+→ choose applicable prompt template
+→ fill only intentionally open fields
+→ preserve fixed template content and defaults
+→ prompt QA
+→ final ready-to-use production prompt
+
+## User experience
+
+The user should be able to use short commands such as:
+
 - `build prompt code to mp4`
+- `build prompt motion passkey`
+- `build prompt mobile car sharing`
 
-The user should not have to fill a long specification when the available research and skills can safely infer the missing context.
+The system should infer commercially useful context from the supplied research and skills instead of making the user complete a long form.
 
-## Layout
-- `research/` — operationalized research notes
-- `skills/` — reusable reasoning and production skills
-- `templates/` — production output contracts
-- `system-instructions/` — ChatGPT Custom GPT and Gemini Gem instructions
-- `docs/` — architecture notes
+## Template fidelity
 
-## Principles
-Commercial demand → buyer utility → differentiation → longevity → production feasibility.
+A user-supplied template is the authoritative base prompt.
 
-Premium is treated as functional, adaptable, clean, technically sound, and commercially usable—not merely visually elaborate.
+- Preserve its role statement and purpose.
+- Preserve section order and field names.
+- Preserve populated defaults unless the user explicitly overrides them.
+- Fill intentionally blank placeholders from research/skills.
+- Preserve all fixed visual, motion, and code rules.
+- Do not shorten, summarize, or redesign the template.
+- Do not add unrelated fields.
+- Do not generate the downstream code in Layer 1.
 
-Platform-specific requirements are kept separate and must be rechecked against current official documentation before submission.
+## Architecture
+
+- `research/` — research-derived operational knowledge
+- `skills/` — reasoning and prompt-building skills
+- `templates/` — prompt templates
+- `system-instructions/` — platform-specific Layer 1 instructions
+
+## Commercial principle
+
+commercial demand → buyer utility → differentiation → longevity → production feasibility
+
+Do not invent unsupported sales data, marketplace guarantees, search-ranking weights, or moderation thresholds.
