@@ -1,68 +1,78 @@
 # Premium Production Prompt Specification — Layer 1
 
 ## Purpose
+Convert commercial intelligence and art direction into the depth of specification required for a professional downstream production prompt.
 
-Convert commercial intelligence into the level of creative specificity expected from a professional production prompt.
+## Target quality
+The reference quality target is an implementation-ready production specification, not merely a theme, style label, and generic motion instructions.
 
-This skill is the bridge between "good idea" and "implementation-ready prompt".
+Use the depth of a professional motion brief as the target, while adapting technical rules to the selected medium.
 
-## Premium specification layers
-
-A complete creative specification may include:
-
-1. Commercial purpose
+## Specification stack
+For a non-trivial motion prompt, define as applicable:
+1. Commercial purpose / communication goal
 2. Conceptual situation
 3. Visual system
-4. Subject hierarchy
+4. Subject and state hierarchy
 5. Composition and framing
-6. Scene/state structure
-7. Timeline
-8. Motion language
-9. Easing behavior
-10. Keyframe checkpoints
-11. Color roles
-12. Art direction
-13. Loop behavior
-14. Technical constraints
+6. Background/environment support
+7. Scene/state architecture
+8. Exact timeline
+9. Primary motion
+10. Secondary and micro movement
+11. Transition behavior
+12. Keyframe checkpoints
+13. Easing and velocity character
+14. Color roles and palette
+15. Typography behavior when relevant
+16. Camera/viewport behavior
+17. Loop strategy
+18. Technical production direction
+19. IP/asset restrictions
 
-Use only relevant layers.
+Do not force every layer into every prompt. Select the layers required by the concept.
 
-## Quality standard
+## No production defaults
+Do not assume duration, scene count, aspect ratio, resolution, FPS, or loop state from a previous example.
+Decide these internally from explicit user constraints first, then from commercial use, concept complexity, readability, renderer needs, and loop requirements.
 
-"Premium" is not synonymous with more effects or more text.
+## Detail is operational
+Translate abstract adjectives into concrete attributes.
 
-A premium prompt should reduce downstream ambiguity while preserving creative coherence.
+Examples:
+- premium → controlled hierarchy, spacing, restrained effects, deliberate motion, coherent surfaces
+- dynamic → identify the object, action, timing, acceleration/deceleration, and settling
+- clean → specify spacing, object separation, contrast, and absence of clutter
+- modern UI → specify surface language, component geometry, interaction state, and depth behavior
 
-Each instruction should answer at least one of:
-- what is shown?
-- why is it shown?
-- where is it placed?
-- how does it change?
-- when does it change?
-- how should it feel?
-- what must remain stable?
-- how does it return to the initial state?
-- what technical condition must the generator obey?
+## Timeline standard
+When duration is known or inferred, cover the full runtime from 0.00s to the selected end.
+Use meaningful ranges rather than disconnected timestamps.
+Represent entrance, primary action, state transition, hold, and ending/loop preparation when applicable.
 
-## Visual specificity
+## State architecture
+Build animation around meaningful visual states.
+A typical sequence might be initial → interaction → processing → resolution → hold → return/loop, but adapt it to the actual concept.
 
-Avoid phrases such as "make it beautiful", "dynamic", or "premium" without operational detail.
+## Keyframe standard
+Important checkpoints should communicate time, state, primary motion, and supporting motion.
+Keyframes are checkpoints, not a substitute for the full timeline.
 
-Translate them into concrete attributes:
-- shape language
-- surface treatment
-- depth
-- lighting
-- hierarchy
-- spacing
-- scale relationships
-- contrast
-- motion behavior
+## Easing standard
+Map easing to behavior. Use named easing families or concrete cubic-bezier values when useful. Do not add arbitrary values without a visual reason.
 
-## Commercial specificity
+## Composition standard
+For important subjects, define relative placement, scale hierarchy, visual focus, margins/safe areas, depth relationships, and background support.
+Do not use a copy-space percentage as a universal rule. Apply copy space only when the buyer/use case benefits from it.
 
-The prompt should reveal the buyer's practical communication need through the visual concept, not through a long market lecture.
+## Palette standard
+When color is important, define functional roles such as background, surface, primary, secondary, accent, success/warning, text, shadow, and highlight.
+Choose a coherent limited system appropriate to the concept.
+
+## Technical adaptation
+Separate creative specification from renderer-specific implementation.
+For Canvas/JavaScript prompts, preserve Canvas-only constraints and express technical direction through responsive coordinates, deterministic time-based animation, render-safe drawing, and loop-safe state logic.
+Do not copy HTML/CSS-specific implementation rules into a Canvas prompt unless the source template explicitly requires them.
 
 ## Restraint
-
-Do not add complexity that weakens readability, stock usability, or renderer reliability.
+Premium detail does not mean maximal complexity. Do not add particles, lighting, camera movement, UI elements, text, or numerical parameters unless they improve comprehension, polish, commercial utility, or implementation clarity.
