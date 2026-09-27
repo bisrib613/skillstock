@@ -7,7 +7,9 @@ Build a precise scene, state, and timeline architecture for professional motion 
 Do not assume a fixed runtime or scene count.
 Determine duration and number of scenes from explicit user constraints first, then from commercial use, concept complexity, readability, and loop requirements.
 
-Five seconds with one scene is valid when the concept communicates better that way. Longer or multi-scene structures are valid when the concept requires them.
+This project uses 5, 10, or 15 seconds as the standard motion durations. Choose 5, 10, or 15 internally based on the concept, commercial use case, scene complexity, readability, and loop requirements. Do not import another duration from an example or previous conversation unless the user explicitly requests it.
+
+One scene at 5 seconds is valid when the concept communicates better that way. A longer duration or multiple scenes is valid when the concept requires it.
 
 ## Scene model
 For each scene/state define:
