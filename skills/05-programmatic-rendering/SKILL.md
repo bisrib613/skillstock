@@ -1,25 +1,31 @@
 # Programmatic Rendering — Prompt Layer
 
 ## Purpose
-Translate rendering constraints into explicit prompt instructions for downstream code generation.
+Translate research-derived rendering risks into explicit implementation requirements for downstream code generation.
 
 ## Determinism
-For frame-by-frame rendering, require deterministic procedural behavior.
-Avoid uncontrolled randomness that changes persistent positions or states between frames.
-Use seeded pseudo-random values when procedural variation is needed.
+For frame-by-frame rendering, all persistent procedural variation must be deterministic.
+Do not use uncontrolled Math.random()-style behavior for values that must remain stable between frames.
+Use seeded pseudo-random logic when procedural variation is required, with a deterministic relationship to time/frame.
+
+## Time and frame integrity
+Animation state must derive predictably from the supplied time/frame. First and last states must be reproducible.
+Avoid frame-dependent accumulation that causes drift.
 
 ## Resolution independence
-Use normalized/logical coordinates, responsive layout calculations, or scalable viewBox systems as appropriate.
+Use normalized/logical coordinates, responsive calculations, or scalable viewBox-like systems as appropriate so the composition can adapt without clipping or distortion.
 
-## Frame safety
-Prompt requirements should cover valid first frame, deterministic timing, no layout shift, font readiness before capture when fonts are used, bounded Canvas/DOM work, no uncontrolled asynchronous dependencies, and no per-frame DOM explosion.
+## Typography/render readiness
+If fonts are used in a renderer that loads them asynchronously, require font readiness before frame capture. Avoid layout shift between frames.
+
+## Render performance
+Keep Canvas/DOM work bounded. Avoid uncontrolled DOM/node growth, unnecessary per-frame object creation, and heavy effects that cause frame drops or corrupted output.
 
 ## Loop safety
-When looping, define the initial state, final state, return path, and deterministic loop endpoints.
+For a loop, define exact initial/final state equivalence and deterministic return behavior. Procedural phase must not jump at the boundary.
 
-## Renderer awareness
-Do not assume interactive browser preview and frame-by-frame encoded output behave identically.
-Prompt the downstream generator to optimize for deterministic rendering rather than only interactive appearance.
+## Technical adaptation
+Apply only requirements relevant to the selected medium. Do not inject HTML/DOM rules into a Canvas-only prompt unless the source template explicitly calls for them.
 
 ## Output
-Return technical requirements relevant to the selected output template. Do not inject unrelated renderer technologies.
+Return implementation-relevant deterministic rendering constraints, not downstream code.
