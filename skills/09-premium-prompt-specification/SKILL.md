@@ -4,9 +4,9 @@
 Translate research-derived commercial intelligence into an implementation-ready production specification.
 
 ## Commercial foundation
-A premium asset is not defined by adjectives alone. Research ties premium value to functional design and technical usability: the buyer should be able to integrate the asset with minimal reconstruction.
+Research ties premium value to functional design and technical usability: the buyer should be able to integrate the asset with minimal reconstruction.
 
-Specify, when relevant:
+Specify when relevant:
 1. commercial purpose/communication goal;
 2. conceptual situation;
 3. visual system;
@@ -29,7 +29,7 @@ Specify, when relevant:
 
 ## Premium composition
 Use hierarchy, useful negative space, clear focal point, safe margins, relative scale, and depth.
-The research's 40–50% copy-space pattern is a use-case-dependent recommendation, not a universal requirement.
+The research's 40–50% copy-space pattern is use-case-dependent, not universal.
 
 ## Premium visual system
 Use controlled palettes and functional color roles. Translate style labels into shape, surface, line, depth, lighting, and texture behavior.
