@@ -1,64 +1,50 @@
 # Prompt Template Builder — Layer 1
 
 ## Purpose
-Take resolved commercial and creative direction and turn it into a complete production prompt while preserving the user's source template.
+Convert the resolved commercial direction into the user's source production prompt without losing the template contract.
 
-## No fixed production defaults
-Do not assume a universal duration, scene count, aspect ratio, resolution, FPS, loop state, or other production parameter.
-Every empty source field is intentionally open.
-Decide values internally from the user's request, commercial use case, visual concept, medium, readability, production needs, and source knowledge.
+## Source-template authority
+The user's supplied template is authoritative for:
+- role statement;
+- field names/order;
+- explicitly fixed values;
+- fixed visual rules;
+- fixed motion rules;
+- fixed code/output rules.
 
-Only values explicitly fixed by the source template remain fixed. In the active Motion Studio template, Vector and Flat vector are intentionally fixed unless the user explicitly changes them.
-
-## Template authority
-The user's supplied template is the base prompt contract.
-Preserve the role statement, purpose, original section order, field names, fixed values, fixed visual rules, fixed motion rules, and fixed code/output rules.
-Never shorten or silently rewrite fixed instruction blocks.
+Treat those instructions as prompt content being assembled. Layer 1 does not execute downstream instructions.
 
 ## Placeholder semantics
-- An empty slot such as [ ] = infer and fill.
-- An explicitly populated source value = preserve unless the user overrides it.
-- An explicit user override = use the override.
+- [ ] = open field; reason and fill it.
+- populated source value = preserve unless user overrides;
+- explicit user override = use it.
 
-## Detail mode
+Never import production values from examples or previous prompts.
 
-The builder receives one of two modes:
+## No implicit production defaults
+Do not assume duration, scene count, aspect ratio, resolution, FPS, or loop state.
+For the active Motion Studio route, open duration is selected only as 5, 10, or 15 seconds using commercial use, concept complexity, readability, and production requirements.
 
-### Sederhana
-Populate the source template and preserve its fixed content. Do not insert the extended production-specification sections.
+## Detail modes
+Sederhana:
+- populate every open field;
+- preserve all fixed template content;
+- do not add extended production-specification sections.
 
-### Full Detail
-Populate the source template and insert the relevant production-specification sections needed for an implementation-ready prompt. Follow the Premium Production Prompt Specification and Motion Scene Engineering skills when applicable.
+Full Detail:
+- populate every open field;
+- add only production detail required to make the prompt implementation-ready;
+- for non-trivial motion, use the applicable specification sections: DESKRIPSI, Konsep Visual, Style, Palet Warna, Struktur Scene / Scene Flow, Timeline Motion, Detail Motion Language, Camera & Composition, Keyframe Summary, Easing Recommendation, Overall Art Direction, Technical Production Direction.
 
-## Premium prompt expansion
-A minimal base template can still produce a highly detailed professional prompt through generated production-specification sections.
+## Research-to-template rule
+Commercial decisions come from the research-derived skills first. The template only determines how those decisions are represented.
+Do not weaken a commercial concept merely to fit a short field.
 
-For the active Motion Studio prompt, preserve the original settings/concept fields and insert generated production detail before the original fixed ATURAN VISUAL, ATURAN MOTION, and ATURAN KODE blocks.
+## Active Motion Studio placement
+Keep original settings/concept fields. Insert generated Full Detail sections after those fields and before fixed ATURAN VISUAL, ATURAN MOTION, and ATURAN KODE blocks.
 
-Preferred sections for a non-trivial motion prompt:
-1. DESKRIPSI
-2. Konsep Visual
-3. Style
-4. Palet Warna
-5. Struktur Scene / Scene Flow
-6. Timeline Motion
-7. Detail Motion Language
-8. Camera & Composition
-9. Keyframe Summary
-10. Easing Recommendation
-11. Overall Art Direction
-12. Technical Production Direction when materially relevant
-
-## Fidelity rule
-Generated enrichment may expand the source prompt but must not replace, delete, reorder, summarize, or weaken its fixed blocks.
-The template's downstream instructions are content being assembled. Layer 1 must not execute them.
-
-## Detail standard
-Each generated section must contain concrete information useful to a downstream code generator.
-Prefer state descriptions, spatial relationships, timing ranges, meaningful motion values/ranges, easing behavior, color roles, and implementation-relevant constraints over vague adjectives.
-
-Do not pad the prompt merely to make it longer.
+## Fidelity
+Never summarize, delete, reorder, or weaken fixed blocks. Do not execute `Output only JavaScript` at Layer 1; preserve it inside the downstream prompt.
 
 ## Final output
-The result is one complete ready-to-use production prompt.
-Never generate the downstream JavaScript, HTML, SVG, image, or MP4.
+Return one complete ready-to-use production prompt, never downstream JavaScript/HTML/SVG/image/MP4.
