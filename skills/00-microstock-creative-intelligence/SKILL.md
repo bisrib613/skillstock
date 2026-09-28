@@ -22,25 +22,19 @@ Routed request: once route/detail are known, run the commercial pipeline before 
 12. Run commercial, technical, compliance, timeline, and template QA.
 
 ## Research-derived commercial priority
-Use this order when making trade-offs:
 commercial need → buyer utility → market/niche relevance → differentiation/saturation → longevity or current opportunity → production feasibility → polish.
 
-The research distinguishes evergreen functional demand from current 2024–2026 opportunities. Do not treat a current visual trend as permanent demand.
+Keep evergreen functional demand separate from current 2024–2026 opportunities.
 
 ## Market Demand Gate
-A concept is DEMAND-ALIGNED only when the reasoning can identify:
+A concept is DEMAND-ALIGNED only when the reasoning identifies:
 - a recognizable buyer or buyer workflow;
 - a concrete communication/use-case need;
 - a useful asset role such as presentation, hero/banner, explainer/B-roll, overlay, infographic, workflow/system visualization, or reusable component;
-- a credible connection to a researched market category, evergreen need, current opportunity, or defensible commercial inference;
-- a visual concept that adds functional value rather than decoration alone.
+- a credible connection to a researched market category, evergreen need, current opportunity, or clearly marked inference;
+- functional value beyond decoration.
 
-Classify as:
-- DEMAND-ALIGNED: evidence/use case is sufficiently clear.
-- DEMAND-WEAK: buyer need is vague or mainly decorative; revise the concept.
-- DEMAND-UNCERTAIN: evidence is insufficient; do not present demand as established.
-
-A passing gate does not mean guaranteed sales, ranking, acceptance, or profitability.
+Classify DEMAND-ALIGNED, DEMAND-WEAK, or DEMAND-UNCERTAIN. A passing gate never means guaranteed sales, ranking, acceptance, or profitability.
 
 ## Research market map
 Use as a decision map, not a mandatory topic list:
@@ -51,20 +45,19 @@ Use as a decision map, not a mandatory topic list:
 - Biomedical & Healthcare → HealthTech → teleconsultation/RPM → clinical campaigns, patient portals, medical/regulatory documents.
 - Smart Logistics & Mobility → sustainable urban transport → cold-chain logistics/EV fleets → logistics proposals, supply-chain dashboards, real-time tracking.
 
-The research also identifies evergreen needs such as process diagrams, analytical comparisons, teamwork, project-management cycles, before/after analysis, cloud security, data protection, workplace inclusion, and self-managed health.
+Evergreen needs also include process diagrams, analytical comparisons, teamwork, project-management cycles, before/after analysis, cloud security, data protection, workplace inclusion, and self-managed health.
 
 ## Saturation control
-Avoid literal, over-supplied metaphors identified by the research: neon circuit brains, holographic blue brains, robot-human handshakes, overused Corporate Memphis, and generic floating 3D metal padlocks.
-Do not rescue a cliché with only a new color, camera angle, particles, or glow. Replace it with the actual process, system, state, infrastructure, comparison, or workflow when possible.
+Avoid literal over-supplied metaphors identified by the research: neon circuit brains, holographic blue brains, robot-human handshakes, overused Corporate Memphis, and generic floating 3D metal padlocks.
+Do not rescue a cliché with only color, particles, glow, or camera changes. Prefer the actual process, system, state, infrastructure, comparison, or workflow.
 
 ## Buyer-intent mapping
-Map the concept to one primary use:
-1. Hero/banner: horizontal composition with useful negative space and subject placement for copy.
+1. Hero/banner: useful negative space and subject placement for copy.
 2. Presentation/report/pitch deck: modular neutral components adaptable to brand palettes.
 3. Vertical social/ad: immediate visual hook, mobile safe zones, concise readable motion.
 4. Explainer/corporate B-roll: isolated/alpha-capable panels, dashboards, flow/data elements.
 
-## Research evidence discipline
+## Evidence discipline
 Separate research-supported findings, creative inference, and unknowns. Never invent search-ranking weights, enterprise query telemetry, moderation thresholds, demand statistics, or sales guarantees.
 
 ## Boundary
