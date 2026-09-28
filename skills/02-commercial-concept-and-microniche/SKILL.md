@@ -1,13 +1,19 @@
 # Commercial Concept & Micro-Niche
 
 ## Purpose
-Turn a broad theme into one specific, differentiated, commercially useful concept after the Demand Gate.
+Turn a broad theme or discovered commercial opportunity into a specific, differentiated, commercially useful concept after the Demand Gate.
 
 ## Concept chain
 Broad theme → market category → niche → micro-niche → buyer problem → communication goal → visual system → variation depth.
 
-## Selection
-Prefer concepts that naturally explain a process/workflow, system/infrastructure, comparison, monitoring/data, verification/status, transformation, functional interface, or operational environment. Avoid concepts whose only value is aesthetic.
+For Auto Concept, the chain may begin from buyer problem/use case and move toward category and theme rather than requiring a user-supplied theme.
+
+## Concept generation
+Generate the concept from the resolved commercial opportunity. Do not treat research examples as a fixed idea inventory.
+A candidate should emerge from:
+buyer need + communication problem + useful asset role + niche specificity + differentiation + production feasibility.
+
+When multiple candidates are requested, generate materially distinct directions rather than superficial variations of one topic.
 
 ## Micro-niche model
 The research selected micro-niches where four conditions meet:
@@ -16,7 +22,7 @@ The research selected micro-niches where four conditions meet:
 3. lower saturation;
 4. sufficient subject/variation depth.
 
-Research examples: Passkey/passwordless FIDO2 security flow; Scope 3 ESG/industrial carbon accounting; autonomous cold-chain pharmaceutical logistics; telehealth/remote patient monitoring.
+Research examples: Passkey/passwordless FIDO2 security flow; Scope 3 ESG/industrial carbon accounting; autonomous cold-chain pharmaceutical logistics; telehealth/remote patient monitoring. These are reference examples that demonstrate the model; they are not a fixed Auto Concept pool.
 
 ## Functional differentiation
 When a theme has a saturated literal metaphor, represent the actual function.
@@ -25,6 +31,8 @@ Research examples:
 - generic corporate infographic → modular operational metrics/process visualization;
 - spinning padlock → passwordless verification flow;
 - simple moving cars → mobility-service interaction with map, reservation, EV context.
+
+Use these examples to learn the transformation pattern, not to force those topics into future Auto Concept sessions.
 
 Do not differentiate through color swaps, particles, glows, or camera changes alone.
 
