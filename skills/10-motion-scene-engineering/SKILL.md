@@ -1,66 +1,62 @@
 # Motion Scene Engineering — Layer 1
 
 ## Purpose
-Build a precise scene, state, and timeline architecture for professional motion prompts.
+Build scene/state architecture that supports commercial comprehension and downstream implementation.
 
-## No preset duration or scene count
-Do not assume a fixed runtime or scene count.
-Determine duration and number of scenes from explicit user constraints first, then from commercial use, concept complexity, readability, and loop requirements.
+## Duration and scene count
+No preset duration or scene count.
+Choose only 5, 10, or 15 seconds for the active project, based on:
+commercial use → communication complexity → meaningful states → readability → loop/ending needs.
+Never copy a duration from a research example; research examples may contain other values.
 
-This project uses 5, 10, or 15 seconds as the standard motion durations. Choose 5, 10, or 15 internally based on the concept, commercial use case, scene complexity, readability, and loop requirements. Do not import another duration from an example or previous conversation unless the user explicitly requests it.
+## Scene/state model
+For each meaningful scene/state define:
+- time range;
+- purpose;
+- visible elements;
+- starting state;
+- primary action;
+- supporting motion;
+- transition;
+- ending state.
 
-One scene at 5 seconds is valid when the concept communicates better that way. A longer duration or multiple scenes is valid when the concept requires it.
-
-## Scene model
-For each scene/state define:
-- time range
-- purpose
-- visible elements
-- starting state
-- primary action
-- supporting motion
-- transition
-- ending state
-
-## Timeline construction
-Given the selected duration:
-- start at 0.00s
-- end exactly at the selected duration
-- do not overlap ranges
-- do not leave unexplained gaps
-- include transitions and holds
-- use the full runtime intentionally
-
-## State-based thinking
-Prefer meaningful state changes over vague descriptions.
-
-Example pattern:
-initial → interaction → processing → success → hold → loop return
-
-Adapt the pattern to the requested concept.
+## Timeline
+- start at 0.00s;
+- end exactly at selected duration;
+- no overlap;
+- no unexplained gaps;
+- transitions and holds are intentional;
+- primary communication beat receives enough readable time.
 
 ## Motion hierarchy
-Primary motion communicates the idea.
-Secondary motion supports the primary event.
+Primary motion communicates the message.
+Secondary motion supports it.
 Micro motion adds polish.
 Transition motion changes state.
+Remove motion that serves none of comprehension, hierarchy, polish, interaction, or loop continuity.
 
-Do not let micro motion compete with primary motion.
+## Research-derived pacing
+Research identifies linear mechanical interpolation as a quality weakness. Use acceleration/deceleration, custom cubic-bezier or spring-like behavior, settling, and restrained secondary motion where appropriate.
+Do not force non-linear easing when constant speed is functionally correct.
 
-## Timing hierarchy
-Use faster timing for emphasis or interaction, medium timing for transformation, and longer holds where comprehension benefits.
+## Commercial motion patterns
+Useful patterns include:
+- workflow/process reveal;
+- verification/status change;
+- dashboard/data update;
+- infrastructure/data flow;
+- isolated UI/overlay interaction;
+- transformation/comparison;
+- seamless loop.
 
-Do not make every action equally fast.
+Select the pattern from buyer use case, not a preset.
 
 ## Keyframe summary
-When the animation has meaningful complexity, include:
+For meaningful complexity:
 Time | State | Primary Motion | Supporting Motion
 
 ## Loop engineering
-When a loop is requested, precisely describe the initial state, final state, return path, and deterministic relationship between the endpoints.
-
-Do not rely on unexplained fades as the only loop strategy unless that is intentionally part of the concept.
+When looping, specify initial state, final state, deterministic return path, and endpoint equivalence. Do not use an unexplained fade as the default loop solution.
 
 ## Anti-slop
-Reject movement added only because the timeline feels empty.
-Every motion should serve comprehension, hierarchy, polish, interaction, or loop continuity.
+Never add motion merely to fill empty runtime.
