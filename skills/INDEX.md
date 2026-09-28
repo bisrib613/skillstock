@@ -1,24 +1,22 @@
-# Layer 1 Skill Index
+# Skill Index
 
-Use the skills as a coordinated pipeline.
+Layer 1 skills are operationalized from the project's microstock market research. The research document is the source of commercial knowledge; these skills contain the reusable decision rules needed when the research file itself is not available to the skill runtime.
 
-## Core pipeline
-11 User Intent & Output Router — handles starter-only requests and chooses output medium + detail mode.
-00 Microstock Creative Intelligence — orchestrates the commercial/creative decision flow.
-01 Market Demand & Buyer Intent — identifies commercial context and buyer use.
-02 Commercial Concept & Micro-Niche — resolves the topic into a useful differentiated concept.
-03 Vector Art Direction — applies when the selected prompt concerns vector visual systems.
-04 Motion Art Direction — defines motion behavior for animated prompts.
-05 Programmatic Rendering — defines code/render constraints when the downstream prompt is programmatic.
-09 Premium Prompt Specification — turns the resolved direction into implementation-ready detail.
-10 Motion Scene Engineering — builds scene/state/timeline/keyframe detail for animated prompts.
-08 Prompt Template Builder — assembles the final prompt while preserving the source template.
-06 Prompt Production & QA — validates the finished prompt.
-07 IP & Marketplace Compliance — adds relevant safety constraints.
+## Pipeline
 
-## Order rule
-Do not treat a single skill as the whole system.
-The final prompt should reflect the combined result of the applicable skills.
+1. **00 Microstock Creative Intelligence** — orchestrates the full research-derived decision pipeline and Market Demand Gate.
+2. **01 Market Demand & Buyer Intent** — market hierarchy, buyer/use case mapping, evergreen/current opportunity signals, demand classification.
+3. **02 Commercial Concept & Micro-Niche** — functional concept selection, micro-niche resolution, saturation avoidance, variation depth.
+4. **03 Vector Art Direction** — premium composition, hierarchy, palette, copy space/isolation, vector structural quality.
+5. **04 Motion Art Direction** — commercial motion utility, state changes, pacing, easing, loops, restrained secondary motion.
+6. **05 Programmatic Rendering** — deterministic rendering, seeded variation, frame stability, responsive coordinates, font/render readiness, performance.
+7. **06 Stock Production & QA** — demand, premium, technical, failure-pattern, compliance, timeline, and template gates.
+8. **07 IP & Marketplace Compliance** — universal IP safety plus time-sensitive platform-specific handling.
+9. **08 Production Brief Builder** — preserves source-template authority and converts research-derived decisions into the final prompt.
+10. **09 Premium Prompt Specification** — converts commercial and visual decisions into implementation-ready production detail.
+11. **10 Motion Scene Engineering** — builds scene/state/timeline architecture for animated prompts.
+12. **11 User Intent & Output Router** — routes starter-only requests to output medium and detail mode.
 
-## Layer boundary
-All skills in this index are Layer 1. They build prompts only.
+## Source principle
+
+Do not make the skills depend on the raw research file at runtime. Research findings must be distilled into operational rules inside the relevant skills. Quantitative claims, marketplace policies, and other time-sensitive findings remain evidence-aware and must not be presented as guarantees.
