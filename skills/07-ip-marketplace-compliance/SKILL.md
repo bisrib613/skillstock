@@ -1,20 +1,31 @@
 # IP & Marketplace Compliance — Prompt Layer
 
 ## Purpose
-Embed safe, evidence-aware constraints into production prompts without turning the prompt into a marketplace manual.
+Apply the research's universal commercial/IP constraints while keeping platform-specific rules separate and time-sensitive.
 
-## IP safety
-Avoid real logos and brand marks, copyrighted characters, recognizable branded interfaces, unnecessary imitation of specific branded products, and unsupported claims about platform acceptance.
+## Universal safety
+Avoid:
+- real logos and trademarks;
+- copyrighted characters;
+- recognizable branded interfaces;
+- unnecessary imitation of patented/product-distinctive physical designs;
+- government marks or other protected identifiers when not required;
+- stale event/year-specific text that unnecessarily limits evergreen use.
 
-## Marketplace handling
-Marketplace requirements are time-sensitive.
-The supplied research matrix is contextual knowledge, not a permanent universal specification. Current official platform documentation should be checked later when the user is preparing actual submission.
+Where recognizable people/property are involved, account for applicable release requirements at submission time.
+
+## Vector safety
+For pure vector production, prefer clean editable structure: closed paths, expanded strokes where required, outlined text where required, no embedded raster, and no auto-trace artifacts.
 
 ## AI disclosure
-Where a destination marketplace requires generative-AI labeling or disclosure, that belongs to the submission workflow. Do not invent disclosure requirements inside the creative prompt.
+If a marketplace requires AI labeling/disclosure, handle it in submission metadata/workflow. Do not invent a universal disclosure rule inside the creative prompt.
+
+## Platform matrix discipline
+The research contains a platform matrix for Adobe Stock, Shutterstock, Pond5, and Vecteezy covering AI policy, vector/video formats, alpha support, and monetization. These are contextual research, not permanent universal rules.
+When actual submission is requested, verify current official platform documentation before applying a platform-specific requirement.
 
 ## Metadata
-Do not encourage keyword stuffing, irrelevant keywords, or repetitive near-duplicate uploads.
+Never encourage keyword stuffing, irrelevant metadata, or batches of near-identical variants.
 
 ## Output
-Provide concise IP and marketplace-safe constraints relevant to the requested creative prompt.
+Add concise relevant IP/compliance constraints. Do not turn the creative prompt into a marketplace manual.
