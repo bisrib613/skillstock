@@ -1,32 +1,51 @@
 # Market Demand & Buyer Intent
 
 ## Purpose
-Translate a theme into the most commercially useful direction supported by the research.
+Convert a theme into a research-grounded commercial opportunity and decide whether the concept passes the buyer-demand gate.
 
-## Decision path
-Theme → broad category → niche → likely buyer → practical use case → visual communication need → opportunity context
+## Research hierarchy
+Resolve:
+Broad Category → Industry Niche → Specific Sub-Niche → Commercial Use Case → Visual Opportunity.
 
-## Research handling
-Separate evidence directly stated by the research, reasonable creative inference, and unknowns.
-Do not invent quantitative demand evidence.
+Use the research map as evidence. Do not force every theme into one of its named categories when the fit is weak.
 
-Use the research's opportunity areas as a map rather than a mandatory topic catalog:
-- Enterprise Technology & SaaS
-- Cybersecurity & Compliance
-- Green Energy & Sustainability
-- FinTech & Corporate Finance
-- Biomedical & Healthcare
-- Smart Logistics & Mobility
+## Demand Gate
+Evaluate these questions in order:
+1. Who buys or uses this asset?
+2. What communication problem are they solving?
+3. Where would the asset be used?
+4. What visual function does it perform?
+5. Is the need evergreen, current/emerging, or only a creative inference?
+6. Is the proposed representation commercially useful rather than decorative?
+7. Is the visual space already dominated by a saturated metaphor?
 
-## Buyer intent
-Map the asset to what a buyer needs to accomplish: explain, advertise, present, compare, educate, demonstrate a workflow, visualize data/infrastructure, or overlay supporting information on video.
+Return:
+- DEMAND-ALIGNED when buyer + use case + visual utility are concrete.
+- DEMAND-WEAK when the theme can only be justified as decoration or the buyer problem is unclear.
+- DEMAND-UNCERTAIN when evidence is insufficient.
 
-## Opportunity quality
-Prefer concepts where the commercial use is understandable from the visual itself.
-When a broad theme has both a generic decorative interpretation and a functional commercial interpretation, prefer the functional one when supported by the research.
+Never equate DEMAND-ALIGNED with guaranteed sales.
 
-## Time sensitivity
-Keep evergreen principles separate from current/emerging trends. Do not turn a dated trend into a permanent rule.
+## Research-backed opportunity families
+Enterprise Technology & SaaS: cloud/DevOps, microservices/serverless; uses include technical presentations, B2B marketing, investor decks.
+Cybersecurity & Compliance: identity/access, Passkey/FIDO2; uses include onboarding, security training, enterprise login explainers.
+Green Energy & Sustainability: smart grid, batteries, ESG/decarbonization; uses include sustainability reports and renewable-energy proposals.
+FinTech & Corporate Finance: cross-border B2B payments, treasury; uses include financial reports, commercial banking interfaces, client acquisition.
+Biomedical & Healthcare: teleconsultation/RPM; uses include clinical campaigns, patient portals, regulatory documents.
+Smart Logistics & Mobility: cold-chain logistics, EV fleets; uses include logistics proposals, supply-chain dashboards, real-time tracking.
 
-## Output
-Return commercial category, niche/micro-niche, buyer, use case, communication need, opportunity context, and saturation context.
+## Evergreen signals
+Prefer recurring business communication needs such as process diagrams, analytical comparisons, teamwork, project-management cycles, before/after analysis, cloud security, data protection, workplace inclusion, and self-managed health when relevant.
+
+## Current-opportunity signals
+The research describes 2024–2026 interest in tactile/multisensory warmth, soft fluid gradients/Halo Effect, authentic human interaction, Surreal Silliness, Dynamic Dimensions, 2D/3D combinations, Zero Trust, agentic workflows, Scope 3 ESG, and advanced cleantech. Treat these as current opportunities, not permanent evergreen rules.
+
+## Buyer intent patterns
+Use one primary intent:
+- Hero/banner: reserve meaningful negative space, often 40–50% when copy is genuinely needed.
+- Presentation/report: modular, neutral, adaptable components.
+- Vertical social/ad: immediate comprehension, safe zones, concise 5–10 second motion when appropriate.
+- Explainer/B-roll: isolated/alpha-friendly panels, dashboards, flow/data overlays.
+
+## Evidence discipline
+Do not fabricate quantitative demand, rankings, buyer search telemetry, or marketplace algorithm weights. The research explicitly identifies these as knowledge gaps.
