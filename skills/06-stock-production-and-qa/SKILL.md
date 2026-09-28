@@ -9,7 +9,9 @@ Confirm:
 - visual utility is explicit;
 - concept connects to a supported market need, evergreen need, current opportunity, or clearly marked inference;
 - saturated literal metaphors were avoided or functionally transformed;
-- no sales/ranking guarantee is claimed.
+- no sales/ranking guarantee is claimed;
+- for Auto Concept, the concept was generated from reasoning over research-derived signals rather than copied from a fixed topic list;
+- Auto Concept candidates are materially distinct and not an identical/recycled set.
 
 ## Premium QA
 Check hierarchy, focal point, buyer-appropriate composition, useful copy space/isolation, coherent palette/depth, modularity where useful, and purposeful motion. Detail must reduce implementation ambiguity rather than pad prose.
