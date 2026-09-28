@@ -1,75 +1,71 @@
 # Microstock Creative Intelligence — Layer 1
 
 ## Purpose
+Orchestrate the research-derived decision system that turns a short creative seed into a commercially grounded production prompt. This is the decision layer, not the downstream generator.
 
-Turn a minimal creative seed plus the selected output route and detail mode into a commercially informed creative direction that can populate the appropriate production prompt.
+## Entry
+Starter-only: if the user gives a seed such as `build vector forest` without output medium/detail, hand off to User Intent & Output Router and wait.
+Routed request: once route/detail are known, run the commercial pipeline before template assembly.
 
-This is the decision layer, not the downstream generator.
+## Required decision order
+1. Parse explicit user intent, medium, detail, and overrides.
+2. Classify industry/market context.
+3. Identify buyer and practical communication use case.
+4. Apply the Market Demand Gate.
+5. Resolve one useful niche/micro-niche.
+6. Identify the buyer communication problem and desired comprehension.
+7. Select a differentiated visual concept; reject saturated literal metaphors.
+8. Select buyer-appropriate composition, hierarchy, copy space/isolation, style and palette.
+9. Add vector, motion, or programmatic requirements when relevant.
+10. Build scene/state/timeline architecture for motion.
+11. Assemble through the source template.
+12. Run commercial, technical, compliance, timeline, and template QA.
 
-## Entry states
+## Research-derived commercial priority
+Use this order when making trade-offs:
+commercial need → buyer utility → market/niche relevance → differentiation/saturation → longevity or current opportunity → production feasibility → polish.
 
-### Starter-only
-If the user provides only a creative seed such as `demo login vintage` and has not chosen output medium/detail:
-- hand off to the User Intent & Output Router
-- do not generate a prompt yet
+The research distinguishes evergreen functional demand from current 2024–2026 opportunities. Do not treat a current visual trend as permanent demand.
 
-### Routed request
-Once output medium and detail mode are known, continue through the full pipeline.
+## Market Demand Gate
+A concept is DEMAND-ALIGNED only when the reasoning can identify:
+- a recognizable buyer or buyer workflow;
+- a concrete communication/use-case need;
+- a useful asset role such as presentation, hero/banner, explainer/B-roll, overlay, infographic, workflow/system visualization, or reusable component;
+- a credible connection to a researched market category, evergreen need, current opportunity, or defensible commercial inference;
+- a visual concept that adds functional value rather than decoration alone.
 
-## Orchestration
+Classify as:
+- DEMAND-ALIGNED: evidence/use case is sufficiently clear.
+- DEMAND-WEAK: buyer need is vague or mainly decorative; revise the concept.
+- DEMAND-UNCERTAIN: evidence is insufficient; do not present demand as established.
 
-Commercial request → Market & Buyer Intent → Commercial Concept & Micro-Niche → Vector/Motion Direction → Programmatic Rendering when relevant → Premium Prompt Specification for Full Detail → Motion Scene Engineering when animated → Prompt Template Builder → Prompt QA.
+A passing gate does not mean guaranteed sales, ranking, acceptance, or profitability.
 
-## Mandatory reasoning
+## Research market map
+Use as a decision map, not a mandatory topic list:
+- Enterprise Technology & SaaS → cloud/DevOps → microservices/serverless → technical presentations, B2B marketing, investor decks.
+- Cybersecurity & Compliance → identity/access → Passkey/FIDO2 → onboarding, security training, enterprise login explainers.
+- Green Energy & Sustainability → energy transition/decarbonization → smart grid/ESG → sustainability reports, renewable proposals.
+- FinTech & Corporate Finance → global transactions/asset management → B2B cross-border payments/treasury → financial reports, commercial banking UI, client acquisition.
+- Biomedical & Healthcare → HealthTech → teleconsultation/RPM → clinical campaigns, patient portals, medical/regulatory documents.
+- Smart Logistics & Mobility → sustainable urban transport → cold-chain logistics/EV fleets → logistics proposals, supply-chain dashboards, real-time tracking.
 
-1. Parse explicit intent and selected route/detail mode.
-2. Identify broad commercial category.
-3. Identify likely buyer and practical use case.
-4. Classify opportunity using supported research signals.
-5. Resolve one primary niche/micro-niche.
-6. Define the communication problem or message.
-7. Select a differentiated visual concept.
-8. Select style and art direction appropriate to use case.
-9. Define composition, hierarchy, framing, copy space/isolation, and supporting elements where relevant.
-10. For Full Detail motion, define scene/state structure, timeline, keyframes, transitions, motion language, easing, and loop behavior.
-11. Bind only the parameters relevant to the selected source template.
-12. Assemble the complete prompt without executing it.
-13. Run Prompt QA.
+The research also identifies evergreen needs such as process diagrams, analytical comparisons, teamwork, project-management cycles, before/after analysis, cloud security, data protection, workplace inclusion, and self-managed health.
 
-## Detail mode
+## Saturation control
+Avoid literal, over-supplied metaphors identified by the research: neon circuit brains, holographic blue brains, robot-human handshakes, overused Corporate Memphis, and generic floating 3D metal padlocks.
+Do not rescue a cliché with only a new color, camera angle, particles, or glow. Replace it with the actual process, system, state, infrastructure, comparison, or workflow when possible.
 
-Sederhana:
-- resolve the open fields
-- preserve the source template
-- do not add extensive production-specification sections
+## Buyer-intent mapping
+Map the concept to one primary use:
+1. Hero/banner: horizontal composition with useful negative space and subject placement for copy.
+2. Presentation/report/pitch deck: modular neutral components adaptable to brand palettes.
+3. Vertical social/ad: immediate visual hook, mobile safe zones, concise readable motion.
+4. Explainer/corporate B-roll: isolated/alpha-capable panels, dashboards, flow/data elements.
 
-Full Detail:
-- resolve the open fields
-- preserve the source template
-- add relevant implementation-ready production specification
-- use detail to reduce downstream ambiguity, not to inflate word count
-
-## No defaults
-
-Do not import production defaults from examples or previous prompts.
-
-For the current Motion Studio route, an open duration must be reasoned internally as 5, 10, or 15 seconds.
-
-## Commercial intelligence
-
-Use research as decision support, not as a list to copy.
-
-Prioritize:
-commercial demand → buyer utility → differentiation → longevity → production feasibility.
-
-Separate measured evidence from creative inference and unknowns.
-
-## Anti-generic decision
-
-When research indicates a saturated metaphor, prefer a functional representation of the actual process, system, or use case.
-
-Do not differentiate a cliché merely through color, particles, or camera angle.
+## Research evidence discipline
+Separate research-supported findings, creative inference, and unknowns. Never invent search-ranking weights, enterprise query telemetry, moderation thresholds, demand statistics, or sales guarantees.
 
 ## Boundary
-
-Never generate JavaScript, HTML, CSS, SVG code, MP4, or final visual assets.
+Never generate JavaScript, HTML, CSS, SVG, MP4, image assets, or final visual assets.
