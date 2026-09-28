@@ -1,28 +1,38 @@
 # Vector Art Direction — Prompt Layer
 
 ## Purpose
-Define a professional vector visual system that a downstream generator can implement cleanly.
+Define a premium vector system that is visually persuasive and structurally useful to a professional buyer.
 
-## Composition
-Consider focal point, hierarchy, scale relationships, negative space, alignment, grouping, framing, safe margins, and adaptability to the requested ratio.
+## Premium visual rules from research
+Premium composition is functional:
+- use dynamic/asymmetric hierarchy rather than rigid centering;
+- reserve roughly 40–50% copy space only when the buyer use case needs text;
+- build foreground/middleground/background depth when appropriate;
+- use controlled visual contrast and clear focal hierarchy;
+- use a limited functional palette; research describes a 60-30-10 approach and strong accessibility contrast as a premium direction;
+- keep typography semantically useful and separable when text is required;
+- favor modular, isolated components and multi-ratio adaptability when useful.
 
-Use approximately 40–50% copy space only when the buyer use case genuinely benefits from text placement, consistent with the supplied research.
+Do not treat any one percentage, palette formula, or ratio as universal when the use case does not require it.
 
 ## Style translation
-Do not stop at a style label such as flat vector.
-Translate style into operational characteristics: shape language, line treatment, surface/gradient treatment, depth, lighting, texture restraint, icon/object consistency, and edge behavior.
-
-## Color system
-Define functional roles when useful: background, primary, secondary, accent, success/warning, text, shadow, and highlight.
-Use a coherent limited system appropriate to the subject.
-
-## Structural quality
-Prefer clean closed paths, controlled Bézier curves, sensible node density, logical groups/layers, expanded text/strokes where the destination requires it, and clean isolation.
- 
-Avoid messy auto-trace, unnecessary anchor points, accidental raster content, inconsistent perspective, and broken geometry.
+Translate “Flat vector”, “modern”, “premium”, etc. into shape language, line behavior, surface treatment, depth, lighting, texture restraint, object consistency, and edge behavior.
 
 ## Commercial utility
-The vector should be easy to understand, adapt, isolate, and integrate into a buyer's layout.
+Design for rapid buyer integration: understandable subject, editable/isolate-able components, useful negative space, modular grouping, and adaptable framing.
+
+## Technical vector quality
+Research-derived requirements:
+- closed filled paths;
+- controlled Bézier curves and sensible node density;
+- expanded strokes/brushes and outlined text where the destination requires it;
+- no embedded raster/bitmap inside pure vector assets;
+- no messy auto-trace/live-trace artifacts;
+- logical named layers/groups;
+- no empty/hidden junk layers;
+- consistent perspective and lighting.
+
+Do not copy platform-specific file requirements into a creative prompt unless the selected destination requires it.
 
 ## Output
-Return visual system, composition, hierarchy, palette roles, geometry constraints, and isolation/copy-space strategy.
+Provide composition, hierarchy, framing, copy-space/isolation strategy, style mechanics, palette roles, geometry constraints, and relevant structural-quality requirements.
